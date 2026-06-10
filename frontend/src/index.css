@@ -1,0 +1,351 @@
+/* =====================================================
+   Global CSS - College Level Green & White Theme
+   ===================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f5f5f5;
+  color: #222;
+  font-size: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ---- Navbar ---- */
+.navbar {
+  background-color: #2e7d32;
+  color: white;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  height: 54px;
+  gap: 20px;
+}
+
+.navbar-title {
+  font-size: 17px;
+  font-weight: 700;
+  margin-right: auto;
+}
+
+.navbar a {
+  color: white;
+  font-size: 14px;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  background-color: #1b5e20;
+}
+
+/* ---- Page wrapper ---- */
+.page {
+  max-width: 1200px;
+  margin: 28px auto;
+  padding: 0 16px;
+}
+
+.page-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #2e7d32;
+  border-left: 4px solid #2e7d32;
+  padding-left: 12px;
+}
+
+/* ---- Card ---- */
+.card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.card-title {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 14px;
+  color: #333;
+  border-bottom: 2px solid #e8f5e9;
+  padding-bottom: 8px;
+}
+
+/* ---- Dashboard Stats ---- */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.stat-card {
+  background: white;
+  border: 1px solid #c8e6c9;
+  border-top: 4px solid #2e7d32;
+  border-radius: 6px;
+  padding: 16px;
+  text-align: center;
+}
+
+.stat-card .stat-value {
+  font-size: 26px;
+  font-weight: 700;
+  color: #2e7d32;
+}
+
+.stat-card .stat-label {
+  font-size: 13px;
+  color: #555;
+  margin-top: 4px;
+}
+
+/* ---- Form ---- */
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.form-group label {
+  font-size: 13px;
+  font-weight: 500;
+  color: #333;
+}
+
+.form-group input,
+.form-group select {
+  padding: 8px 10px;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  font-size: 14px;
+  background: white;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #2e7d32;
+}
+
+.form-actions {
+  margin-top: 16px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* ---- Buttons ---- */
+.btn {
+  padding: 8px 18px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.btn-primary {
+  background-color: #2e7d32;
+  color: white;
+}
+
+.btn-primary:hover { background-color: #1b5e20; }
+
+.btn-secondary {
+  background-color: #546e7a;
+  color: white;
+}
+
+.btn-secondary:hover { background-color: #37474f; }
+
+.btn-danger {
+  background-color: #c62828;
+  color: white;
+}
+
+.btn-danger:hover { background-color: #b71c1c; }
+
+.btn-warning {
+  background-color: #e65100;
+  color: white;
+}
+
+.btn-warning:hover { background-color: #bf360c; }
+
+.btn:disabled {
+  background-color: #9e9e9e;
+  cursor: not-allowed;
+}
+
+/* ---- Table ---- */
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #e8f5e9;
+  font-weight: 600;
+  color: #2e7d32;
+}
+
+tr:nth-child(even) { background-color: #fafafa; }
+tr:hover { background-color: #f1f8e9; }
+
+/* ---- Alert / Info messages ---- */
+.alert {
+  padding: 12px 16px;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.alert-info {
+  background-color: #fff3cd;
+  border: 1px solid #ffca28;
+  color: #5d4037;
+}
+
+.alert-success {
+  background-color: #e8f5e9;
+  border: 1px solid #66bb6a;
+  color: #1b5e20;
+}
+
+.alert-error {
+  background-color: #ffebee;
+  border: 1px solid #ef9a9a;
+  color: #b71c1c;
+}
+
+/* ---- Charts grid ---- */
+.charts-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+@media (max-width: 700px) {
+  .charts-grid { grid-template-columns: 1fr; }
+  .form-grid { grid-template-columns: 1fr; }
+}
+
+/* ---- Factor Analysis list ---- */
+.factor-list {
+  list-style: none;
+  padding: 0;
+}
+
+.factor-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+}
+
+.factor-badge {
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.badge-strong { background: #c8e6c9; color: #1b5e20; }
+.badge-medium { background: #fff9c4; color: #f57f17; }
+.badge-weak   { background: #ffcdd2; color: #b71c1c; }
+
+/* ---- Home hero section ---- */
+.home-hero {
+  background: #e8f5e9;
+  border: 1px solid #c8e6c9;
+  border-radius: 6px;
+  padding: 30px 24px;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.home-hero h1 {
+  font-size: 26px;
+  color: #2e7d32;
+  margin-bottom: 10px;
+}
+
+.home-hero p {
+  font-size: 15px;
+  color: #555;
+  max-width: 640px;
+  margin: 0 auto 16px;
+}
+
+/* ---- Regression result table ---- */
+.reg-table th { background-color: #c8e6c9; }
+
+/* ---- Prediction form ---- */
+.prediction-result {
+  background: #e8f5e9;
+  border: 2px solid #2e7d32;
+  border-radius: 6px;
+  padding: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.prediction-result .pred-value {
+  font-size: 38px;
+  font-weight: 700;
+  color: #2e7d32;
+}
+
+.prediction-result .pred-label {
+  font-size: 16px;
+  color: #555;
+  margin-top: 6px;
+}
+
+/* ---- Misc ---- */
+.text-center { text-align: center; }
+.mb-8 { margin-bottom: 8px; }
+.mb-16 { margin-bottom: 16px; }
+.mt-16 { margin-top: 16px; }
+.green { color: #2e7d32; }
+.loading { color: #555; font-style: italic; }
+
+.nav-links {
+  display: flex;
+  gap: 4px;
+}
