@@ -7,13 +7,13 @@ export default defineConfig({
     port: 5173,
     strictPort: true,
     proxy: {
-      '/get_students': 'http://127.0.0.1:5000',
-      '/add_student': 'http://127.0.0.1:5000',
-      '/update_student': 'http://127.0.0.1:5000',
-      '/delete_student': 'http://127.0.0.1:5000',
-      '/analyze_data': 'http://127.0.0.1:5000',
-      '/predict_marks': 'http://127.0.0.1:5000',
-      '/dashboard': 'http://127.0.0.1:5000',
+      '/get_students': 'https://student-academic-performance-factor.onrender.com',
+      '/add_student': 'https://student-academic-performance-factor.onrender.com',
+      '/update_student': 'https://student-academic-performance-factor.onrender.com',
+      '/delete_student': 'https://student-academic-performance-factor.onrender.com',
+      '/analyze_data': 'https://student-academic-performance-factor.onrender.com',
+      '/predict_marks': 'https://student-academic-performance-factor.onrender.com',
+      '/dashboard': 'https://student-academic-performance-factor.onrender.com',
     }
   }
 })

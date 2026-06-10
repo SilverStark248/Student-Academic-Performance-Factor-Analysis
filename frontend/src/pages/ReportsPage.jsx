@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-const API = 'http://127.0.0.1:5000';
+const API = 'https://student-academic-performance-factor.onrender.com';
 
 function ReportsPage() {
   const [data, setData] = useState(null);

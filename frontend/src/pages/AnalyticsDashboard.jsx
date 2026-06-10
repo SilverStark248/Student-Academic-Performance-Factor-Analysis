@@ -3,7 +3,7 @@ import DashboardCards from '../components/DashboardCards';
 import Charts from '../components/Charts';
 import AnalysisResult from '../components/AnalysisResult';
 
-const API = 'http://127.0.0.1:5000';
+const API = 'https://student-academic-performance-factor.onrender.com';
 
 function AnalyticsDashboard() {
   const [data, setData] = useState(null);
